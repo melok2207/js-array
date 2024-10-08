@@ -7,15 +7,5 @@ function filterAdults(people) {
   });
 }
 
-const people = [
-  { name: 'John', age: 25 },
-  { name: 'Jane', age: 15 },
-  { name: 'Alice', age: 18 },
-  { name: 'Bob', age: 17 }
-];
-
-console.log(filterAdults(people));
-
-
 module.exports = filterAdults;
 
