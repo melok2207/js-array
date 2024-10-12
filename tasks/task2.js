@@ -18,9 +18,10 @@ function getTopScoringStudents(students) {
 }
 
 function getAverageAge(students) {
-  const totalAge = students.reduce(function(sum, student) {
-    return sum + student.age;
-  }, 0);
+  let totalAge = 0;
+  for (let i = 0; i < students.length; i++) {
+    totalAge += students[i].age;
+  }
   return totalAge / students.length;
 }
 
